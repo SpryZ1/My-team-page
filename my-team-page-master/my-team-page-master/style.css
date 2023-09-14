@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-family: 'PT Serif';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+header div p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    max-width: 400px;
+}
+
+main {
+    display: grid;
+    margin-top: 10%;
+    grid-template-columns: auto auto;
+}
+
+img {
+    width: 100%;
+    max-width: 237px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.card:nth-child(2n - 1) {
+    margin: 0;
+}
+
+.card>div>div {
+    display: flex;
+}
+
+.card>div {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    width: 75%;
+}
+
+.name {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.role {
+    margin-left: 5px;
+    font-family: 'PT Serif';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+}
+
+footer {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #A9A9A9;
+    margin-top: 20%;
+}
+
+.signature {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card:nth-child(2n - 1) {
+        margin-top: 25%;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(3),
+    .card:nth-child(4),
+    .card:nth-child(6) {
+        margin: 0;
+    }
+}
